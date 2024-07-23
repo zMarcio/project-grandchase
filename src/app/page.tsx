@@ -1,7 +1,11 @@
-export default function Home() {
-  return (
-    <main className="">
-<h1>oi</h1>
-    </main>
-  );
+import Character from "./view/Character/page"
+
+
+export default function Home(){
+    return(
+        <>
+            <h1>Hello world</h1>
+            <Character/>            
+        </>
+    )
 }
