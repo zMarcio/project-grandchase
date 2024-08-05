@@ -1,0 +1,1 @@
+### For now character_model its working, but i am focus in user_model, because i need to create all functions for user_model, i.e. Create, Read, Update and Delete
