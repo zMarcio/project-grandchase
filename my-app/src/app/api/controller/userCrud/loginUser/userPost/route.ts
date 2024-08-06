@@ -18,7 +18,7 @@ export async function POST(request: Request): Promise<NextResponse> {
 
   try {
     // Check if the email is valid
-    if (emailRegex.test(user.email)) {
+    if (!emailRegex.test(user.email)) {
       const userNickName = await UserModel.findOne({ nickname: user.nickname });
       // Check if the nickname is already in UserModel
       if (userNickName) {
